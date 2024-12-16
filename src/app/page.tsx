@@ -3,42 +3,17 @@
 import { motion } from 'framer-motion'
 import { StarIcon } from '@heroicons/react/24/solid'
 import Image from 'next/image'
-import Link from 'next/link'
 import { ZodiacSelector } from './components/zodiac-selector'
 import { TestimonialCarousel } from './components/testimonial-carousel'
 import { ServicePackages } from './components/service-packages'
 import { BlogPreview } from './components/blog-preview'
+import Header from './components/header'
+import Footer from './components/footer'
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
-      <header className="bg-green-800 text-white p-4">
-        <div className="container mx-auto flex justify-between items-center">
-          <motion.h1 
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-            className="text-2xl font-bold"
-          >
-            Vito Zodiac Makeup
-          </motion.h1>
-          <nav>
-            <motion.ul 
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="flex space-x-4"
-            >
-              <li><Link href="/" className="hover:text-green-300">Home</Link></li>
-              <li><Link href="/services" className="hover:text-green-300">Services</Link></li>
-              <li><Link href="/gallery" className="hover:text-green-300">Gallery</Link></li>
-              <li><Link href="/blog" className="hover:text-green-300">Blog</Link></li>
-              <li><Link href="/contact" className="hover:text-green-300">Contact</Link></li>
-            </motion.ul>
-          </nav>
-        </div>
-      </header>
-
+      <Header />
       <main className="container mx-auto px-4 py-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -107,16 +82,7 @@ export default function Home() {
         </motion.div>
       </main>
 
-      <footer className="bg-green-800 text-white p-4 mt-12">
-        <div className="container mx-auto text-center">
-          <p>© {new Date().getFullYear()} Vito Zodiac Makeup. All rights reserved.</p>
-          <div className="mt-2">
-            <Link href="/" className="hover:text-green-300 mr-4">Privacy Policy</Link>
-            <Link href="/" className="hover:text-green-300">Terms of Service</Link>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }
-
