@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { StarIcon } from '@heroicons/react/24/solid'
 import Image from 'next/image'
@@ -73,9 +74,9 @@ export default function Home() {
           transition={{ delay: 1, duration: 0.8 }}
           className="mt-16 text-center"
         >
-          <a href="/contact" className="bg-green-500 text-white font-bold py-3 px-8 rounded-full hover:bg-green-600 transition duration-300">
+          <Link href="/contact" className="bg-green-500 text-white font-bold py-3 px-8 rounded-full hover:bg-green-600 transition duration-300">
             Book Your Celestial Transformation
-          </a>
+          </Link>
         </motion.div>
       </main>
     </div>
