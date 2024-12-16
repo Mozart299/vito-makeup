@@ -13,7 +13,6 @@ import Footer from './components/footer'
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
-      <Header />
       <main className="container mx-auto px-4 py-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

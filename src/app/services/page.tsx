@@ -7,21 +7,6 @@ import { ServicePackages } from '../components/service-packages'
 export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
-      <header className="bg-green-800 text-white p-4">
-        <div className="container mx-auto flex justify-between items-center">
-          <Link href="/" className="text-2xl font-bold">Vito Zodiac Makeup</Link>
-          <nav>
-            <ul className="flex space-x-4">
-              <li><Link href="/" className="hover:text-green-300">Home</Link></li>
-              <li><Link href="/services" className="hover:text-green-300">Services</Link></li>
-              <li><Link href="/gallery" className="hover:text-green-300">Gallery</Link></li>
-              <li><Link href="/blog" className="hover:text-green-300">Blog</Link></li>
-              <li><Link href="/contact" className="hover:text-green-300">Contact</Link></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-
       <main className="container mx-auto px-4 py-16">
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
