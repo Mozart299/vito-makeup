@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 export function ServicePackages() {
   const packages = [
@@ -10,7 +11,7 @@ export function ServicePackages() {
   ]
 
   return (
-    <motion.section 
+    <motion.section
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
@@ -19,7 +20,7 @@ export function ServicePackages() {
       <h3 className="text-2xl font-bold text-green-800 mb-4">Zodiac-Themed Packages</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {packages.map((pkg, index) => (
-          <motion.div 
+          <motion.div
             key={pkg.name}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -29,14 +30,17 @@ export function ServicePackages() {
             <h4 className="text-xl font-semibold text-green-800 mb-2">{pkg.name}</h4>
             <p className="text-green-600 mb-4">{pkg.description}</p>
             <p className="text-2xl font-bold text-green-500">{pkg.price}</p>
-            <motion.a 
+            <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="mt-4 bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 transition-colors"
-              href="/contact"
+              className="text-left mt-6"   
             >
-              Book Now
-            </motion.a>
+              <Link className="mt-4 bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 transition-colors"
+              href="/contact">
+                Book Now
+              </Link>
+
+            </motion.div>
           </motion.div>
         ))}
       </div>
