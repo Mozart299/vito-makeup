@@ -29,13 +29,14 @@ export function ServicePackages() {
             <h4 className="text-xl font-semibold text-green-800 mb-2">{pkg.name}</h4>
             <p className="text-green-600 mb-4">{pkg.description}</p>
             <p className="text-2xl font-bold text-green-500">{pkg.price}</p>
-            <motion.button 
+            <motion.a 
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="mt-4 bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 transition-colors"
+              href="/contact"
             >
               Book Now
-            </motion.button>
+            </motion.a>
           </motion.div>
         ))}
       </div>

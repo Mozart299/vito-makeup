@@ -101,7 +101,7 @@ export default function Home() {
           transition={{ delay: 1, duration: 0.8 }}
           className="mt-16 text-center"
         >
-          <a href="#" className="bg-green-500 text-white font-bold py-3 px-8 rounded-full hover:bg-green-600 transition duration-300">
+          <a href="/contact" className="bg-green-500 text-white font-bold py-3 px-8 rounded-full hover:bg-green-600 transition duration-300">
             Book Your Celestial Transformation
           </a>
         </motion.div>
@@ -111,8 +111,8 @@ export default function Home() {
         <div className="container mx-auto text-center">
           <p>© {new Date().getFullYear()} Vito Zodiac Makeup. All rights reserved.</p>
           <div className="mt-2">
-            <Link href="/privacy" className="hover:text-green-300 mr-4">Privacy Policy</Link>
-            <Link href="/terms" className="hover:text-green-300">Terms of Service</Link>
+            <Link href="/" className="hover:text-green-300 mr-4">Privacy Policy</Link>
+            <Link href="/" className="hover:text-green-300">Terms of Service</Link>
           </div>
         </div>
       </footer>
