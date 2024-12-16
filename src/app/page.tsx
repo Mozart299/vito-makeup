@@ -7,8 +7,6 @@ import { ZodiacSelector } from './components/zodiac-selector'
 import { TestimonialCarousel } from './components/testimonial-carousel'
 import { ServicePackages } from './components/service-packages'
 import { BlogPreview } from './components/blog-preview'
-import Header from './components/header'
-import Footer from './components/footer'
 
 export default function Home() {
   return (
@@ -80,8 +78,6 @@ export default function Home() {
           </a>
         </motion.div>
       </main>
-
-      <Footer />
     </div>
   )
 }

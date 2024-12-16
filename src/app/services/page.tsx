@@ -12,7 +12,7 @@ export default function ServicesPage() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-4xl font-bold text-green-800 mb-8 text-center"
+          className="text-4xl font-bold text-green-800 mb-8 mt-10 text-center"
         >
           Our Services
         </motion.h1>
