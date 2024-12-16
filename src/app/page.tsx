@@ -75,7 +75,7 @@ export default function Home() {
           className="mt-16 text-center"
         >
           <Link href="/contact" className="bg-green-500 text-white font-bold py-3 px-8 rounded-full hover:bg-green-600 transition duration-300">
-            Book Your Celestial Transformation
+            Book With Us
           </Link>
         </motion.div>
       </main>
