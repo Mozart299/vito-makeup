@@ -21,7 +21,7 @@ export default function Home() {
           transition={{ duration: 0.8 }}
           className="text-center"
         >
-          <h1 className="text-5xl font-bold text-green-800 mb-4">Vito Makeup</h1>
+          <h1 className="text-5xl font-bold text-green-800 mb-4 mt-10">Vito Makeup</h1>
           <p className="text-xl text-green-600 mb-8">Unveil Your Celestial Beauty</p>
         </motion.div>
 
