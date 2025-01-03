@@ -2,12 +2,21 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import { ServicePriceNotes } from './service-price-notes'
 
 export function ServicePackages() {
   const packages = [
-    { name: "Leo's Fierce Glow", description: "Bold and radiant makeup for the confident Leo", price: "$120" },
-    { name: "Pisces' Dreamy Eyes", description: "Ethereal and enchanting eye makeup for the dreamy Pisces", price: "$100" },
-    { name: "Scorpio's Intense Allure", description: "Dramatic and mysterious looks for the passionate Scorpio", price: "$130" },
+    { name: "Everyday glam", description: "Perfect for daily occasions and events", price: "70k" },
+    { name: "Birthday glam", description: "Special makeup for your birthday celebration", price: "90k" },
+    { name: "Special events", description: "Glamorous looks for special occasions", price: "100k" },
+    { name: "Special beats", description: "Premium makeup artistry", price: "130k" },
+    { name: "Kids", description: "Gentle makeup suitable for children", price: "30k" },
+    { name: "Kukyala/kuhingira", description: "Traditional ceremony makeup", price: "800k" },
+    { name: "Bride (Work and Leave)", description: "Bridal makeup with basic package", price: "1.3M" },
+    { name: "Bride + Matron (Work and Leave)", description: "Bridal party package", price: "2M" },
+    { name: "Bride (Full Day)", description: "Complete bridal makeup service", price: "2.3M" },
+    { name: "Bride + Matron (Full Day)", description: "Full day bridal party coverage", price: "2.8M" },
+    { name: "Entourage", description: "Group makeup service", price: "1M" },
   ]
 
   return (
@@ -17,7 +26,7 @@ export function ServicePackages() {
       transition={{ duration: 0.8 }}
       className="my-12"
     >
-      <h3 className="text-2xl font-bold text-green-800 mb-4">Zodiac-Themed Packages</h3>
+      <h3 className="text-2xl font-bold text-green-800 mb-4">VITO Beauty Services</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {packages.map((pkg, index) => (
           <motion.div
@@ -33,18 +42,22 @@ export function ServicePackages() {
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="text-left mt-6"   
+              className="text-left mt-6"
             >
-              <Link className="mt-4 bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 transition-colors"
-              href="/contact">
+              <Link 
+                className="mt-4 bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 transition-colors"
+                href="/contact"
+              >
                 Book Now
               </Link>
-
             </motion.div>
           </motion.div>
         ))}
       </div>
+
+      <ServicePriceNotes />
     </motion.section>
   )
 }
 
+export default ServicePackages
