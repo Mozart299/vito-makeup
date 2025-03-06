@@ -1,3 +1,113 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Import girly fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+/* Apply custom fonts to elements */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Dancing Script', cursive;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #FFF0F5;
+}
+
+/* Zodiac sign specific colors - more vibrant */
+.zodiac-aries { color: #FF3B3B; }
+.zodiac-taurus { color: #2E8B57; }
+.zodiac-gemini { color: #FFD700; }
+.zodiac-cancer { color: #1E90FF; }
+.zodiac-leo { color: #FF8C00; }
+.zodiac-virgo { color: #9370DB; }
+.zodiac-libra { color: #FF6B88; }
+.zodiac-scorpio { color: #8B0000; }
+.zodiac-sagittarius { color: #7B68EE; }
+.zodiac-capricorn { color: #8B4513; }
+.zodiac-aquarius { color: #00BFFF; }
+.zodiac-pisces { color: #40E0D0; }
+
+.bg-zodiac-aries { background-color: #FFDBDB; }
+.bg-zodiac-taurus { background-color: #E0F5E9; }
+.bg-zodiac-gemini { background-color: #FFF8D6; }
+.bg-zodiac-cancer { background-color: #D6E9FF; }
+.bg-zodiac-leo { background-color: #FFE8CC; }
+.bg-zodiac-virgo { background-color: #F0E6FF; }
+.bg-zodiac-libra { background-color: #FFE0E6; }
+.bg-zodiac-scorpio { background-color: #FFD6D6; }
+.bg-zodiac-sagittarius { background-color: #E6E0FF; }
+.bg-zodiac-capricorn { background-color: #F5E8DB; }
+.bg-zodiac-aquarius { background-color: #D6F5FF; }
+.bg-zodiac-pisces { background-color: #D6FFF5; }
+
+/* Replace green color scheme with more vibrant feminine palette */
+.bg-green-50 { background-color: #FFF0F5; }
+.bg-green-100 { background-color: #FFE4EE; }
+.bg-green-200 { background-color: #FFD4E5; }
+.bg-green-300 { background-color: #FFC1DB; }
+.bg-green-500 { background-color: #FF80AB; }
+.bg-green-600 { background-color: #E9578C; }
+.bg-green-700 { background-color: #D4367D; }
+.bg-green-800 { background-color: #B71C64; }
+
+.text-green-100 { color: #FFE4EE; }
+.text-green-200 { color: #FFD4E5; }
+.text-green-300 { color: #FFC1DB; }
+.text-green-500 { color: #FF80AB; }
+.text-green-600 { color: #E9578C; }
+.text-green-700 { color: #D4367D; }
+.text-green-800 { color: #B71C64; }
+
+.hover\:bg-green-600:hover { background-color: #E9578C; }
+.hover\:text-green-300:hover { color: #FFC1DB; }
+
+/* Button styling */
+button, .button {
+  border-radius: 20px !important;
+  box-shadow: 0 4px 8px rgba(255, 128, 171, 0.3) !important;
+  transition: all 0.3s ease !important;
+}
+
+button:hover, .button:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 12px rgba(255, 128, 171, 0.4) !important;
+}
+
+/* Fancy borders and decorative elements */
+.fancy-border {
+  border: 2px solid #FFC1DB;
+  border-radius: 15px;
+  position: relative;
+}
+
+.fancy-border::before {
+  content: '✿';
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  background-color: #FFF0F5;
+  padding: 0 10px;
+  color: #FF80AB;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFE4EE;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FF80AB;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #E9578C;
+}
